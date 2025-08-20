@@ -23,13 +23,27 @@
         <label for="nome">Nome completo:</label>
         <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
 
-        <legend>O que você é?</legend>
-        <div class="opcoes">
-          <label><input type="radio" value="aluno" name="perfil" required> Aluno</label>
-          <label><input type="radio" value="pai"> Pai/Mãe</label>
-          <label><input type="radio" value="responsável"> Responsável</label>
-          <label><input type="radio" value="visitante"> Visitante</label>
-        </div>
+      <fieldset class="grupo-radio">
+  <legend>O que você é?</legend>
+  <div class="opcoes">
+    <label>
+      <input type="radio" name="perfil" value="aluno" required>
+      Aluno
+    </label>
+    <label>
+      <input type="radio" name="perfil" value="pai_mae">
+      Pai/Mãe
+    </label>
+    <label>
+      <input type="radio" name="perfil" value="responsavel">
+      Responsável
+    </label>
+    <label>
+      <input type="radio" name="perfil" value="visitante">
+      Visitante
+    </label>
+  </div>
+</fieldset>
 
         <label for="hora">Horário de chegada:</label>
         <input type="time" id="hora" name="hora" required>

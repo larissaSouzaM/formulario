@@ -116,3 +116,21 @@ footer {
   padding: 10px;
   font-size: 0.9em;
 }
+
+.opcoes label {
+  background: #f1f5ff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .2s;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.opcoes label:hover { background: #e6eeff; }
+
+.opcoes label:has(input:checked) {
+  outline: 2px solid #326fd1;
+  background: #dbe6ff;
+}
+
