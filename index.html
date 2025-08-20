@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Feira dos Cursos Técnicos</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Feira dos Cursos Técnicos</h1>
+    <h2>Colégio Prof. Lindaura Ribeiro Lucas</h2>
+  </header>
+
+  <main class="container">
+    <form action="/FORMULARIO" method="POST">
+      <fieldset>
+        <legend>Seus dados</legend>
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+
+        <legend>O que você é?</legend>
+        <div class="opcoes">
+          <label><input type="radio" value="aluno" name="perfil" required> Aluno</label>
+          <label><input type="radio" value="pai"> Pai/Mãe</label>
+          <label><input type="radio" value="responsável"> Responsável</label>
+          <label><input type="radio" value="visitante"> Visitante</label>
+        </div>
+
+        <label for="hora">Horário de chegada:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <input type="submit" value="Enviar">
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Feira dos Cursos Técnicos</p>
+  </footer>
+</body>
+
+</html>

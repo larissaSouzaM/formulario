@@ -1,0 +1,118 @@
+
+body {
+  font-family: "Bungee", sans-serif;
+  background: linear-gradient(135deg, #acc3f2, #e6ecff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  text-align: center;
+  background: linear-gradient(90deg, #fa3c3c, #326fd1, #2d417d);
+  padding: 25px;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+header h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+header h2 {
+  font-size: 1.1em;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+form {
+  background: white;
+  border-radius: 12px;
+  padding: 25px 30px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+}
+
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+legend {
+  font-size: 1.2em;
+  color: #2d417d;
+  margin-bottom: 10px;
+}
+
+
+input[type="text"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border: 2px solid #ccd6f6;
+  border-radius: 6px;
+  font-size: 0.95em;
+  transition: 0.3s;
+}
+input[type="text"]:focus,
+input[type="time"]:focus {
+  outline: none;
+  border-color: #326fd1;
+  box-shadow: 0 0 5px #326fd1;
+}
+
+
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.opcoes label {
+  background: #f1f5ff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.opcoes label:hover {
+  background: #dbe6ff;
+}
+
+
+input[type="submit"] {
+  background: #326fd1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+input[type="submit"]:hover {
+  background: #fa3c3c;
+}
+
+
+footer {
+  text-align: center;
+  background: #2d417d;
+  color: white;
+  padding: 10px;
+  font-size: 0.9em;
+}
